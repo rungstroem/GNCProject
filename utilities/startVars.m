@@ -78,7 +78,8 @@ landingAltitude = -0.6;
 
 %% Custom Variables
 % Add your variables here:
-% myvariable = 0;
+LQRAltitude
+LQIAltitude
 
 % Register variables after the project is loaded and store the variables in
 % initVars so they can be cleared later on the project shutdown.
