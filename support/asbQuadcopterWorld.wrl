@@ -75,7 +75,7 @@ DEF OnQuadNoRotation Viewpoint {
   orientation 0 -1 -0 1.57
 }
 DEF LandingMarker Transform {
-  translation 57 0.02 97
+  translation 56.7 0 97
   children Shape {
     appearance Appearance {
       material Material {
@@ -83,7 +83,7 @@ DEF LandingMarker Transform {
       }
     }
     geometry Box {
-      size 0.3 0.1 0.3
+      size 0.1 0.01 0.1
     }
   }
 }
