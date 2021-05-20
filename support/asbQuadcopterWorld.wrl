@@ -17,9 +17,10 @@ DEF AHMap Transform {
   }
 }
 DEF QuadBody Transform {
-  translation 57 0.001765 95
+  translation 56.07986 1.387261 96.49808
   scaleOrientation 0 1 0 0
   scale 4 4 4
+  rotation -0.2562917 0.08210589 0.963106 0.0008183857
   children [
     DEF Airframe Transform {
       scaleOrientation 1 0 0 0
@@ -30,24 +31,28 @@ DEF QuadBody Transform {
     }
     DEF Blade1 Transform {
       translation 0.0425 0.015 -0.0425
+      rotation 0 1 0 -0.8183517
       children Inline {
         url "asbQuadcopterBladeCW.wrl" 
       }
     }
     DEF Blade3 Transform {
       translation -0.0425 0.015 0.0425
+      rotation 0 1 0 0.8896432
       children Inline {
         url "asbQuadcopterBladeCW.wrl" 
       }
     }
     DEF Blade2 Transform {
       translation -0.0425 0.015 -0.0425
+      rotation 0 1 0 -0.8222623
       children Inline {
         url "asbQuadcopterBladeCCW.wrl" 
       }
     }
     DEF Blade4 Transform {
       translation 0.0425 0.015 0.0425
+      rotation 0 1 0 1.29069
       children Inline {
         url "asbQuadcopterBladeCCW.wrl" 
       }
@@ -66,13 +71,13 @@ DEF QuadBody Transform {
 }
 DEF IsoNoRotation Viewpoint {
   description "Isometric - No Rotation"
-  position 57.9009 0.670747 95.99
-  orientation -0.46727 0.858698 0.210466 0.847752
+  position 54.0798 3.0391 96.5726
+  orientation -0.34044 -0.87429 -0.34601 1.7068
 }
 DEF OnQuadNoRotation Viewpoint {
   description "Chase - No Rotation"
-  position 53 1.00177 95
-  orientation 0 -1 -0 1.57
+  position 52.07986 2.343061 96.49808
+  orientation -0.26261 -0.72827 -0.26335 1.6443
 }
 DEF LandingMarker Transform {
   translation 56.7 0 97
@@ -86,4 +91,9 @@ DEF LandingMarker Transform {
       size 0.1 0.01 0.1
     }
   }
+}
+DEF Test Viewpoint {
+  description "Test"
+  position 54.07984 3.039102 96.57258
+  orientation -0.3404435 -0.8742852 -0.3460111 1.706846
 }
