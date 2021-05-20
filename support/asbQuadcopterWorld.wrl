@@ -2,6 +2,7 @@
 
 # Copyright 2015-2018 The MathWorks, Inc.
 DEF Trajectory Transform {
+  translation 10 10 10
   children Inline {
     url "asbQuadcopterTrajectory.wrl" 
   }
