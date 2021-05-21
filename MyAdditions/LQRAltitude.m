@@ -32,6 +32,7 @@ R = 1/(4*Controller.totalThrustMaxRelative*Controller.motorsThrustPerMotorMax)^2
 
 % Calculate the LQR gain K
 [KLQR S CLP] = lqr(sys, Q, R, 0);
+KLQR
 
 % Feed forward control
 N = inv([A B; C 0]);
@@ -39,7 +40,7 @@ N = inv([A B; C 0]);
 %Nu = N(3,2:3);
 Nx = N(1:2,3);
 Nu = N(3,3);
-NBar = Nu+KLQR*Nx
+NBar = Nu+KLQR*Nx;
 
 
 %KLQR = [0.8 0.3];

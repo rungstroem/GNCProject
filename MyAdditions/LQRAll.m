@@ -11,7 +11,8 @@ D = linsys.d;
 sys = ss(A,B,C,D);
 
 % Setup Q and R tuning parameter matrices
-Q = eye(12)*0.01
-R = eye(14)*0.1
+Q = eye(12)*0.01;
+R = eye(14)*0.1;
 % Compute lqr gain [K]
-[K, S, CLP] = lqr(sys, Q, R);
+[K, S, CLP] = lqr(sys, Q, R, 0);
+K
