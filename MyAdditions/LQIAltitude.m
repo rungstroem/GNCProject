@@ -13,7 +13,7 @@ D = 0;
 sys = ss(A,B,C,D);
 
 % Define Q and R tuning matrices
-Q = [   1/9 0 0;
+Q = [   1/8 0 0;
         0 1/9 0;
         0 0 1/12];
     % Q_ii = maximum acceptable value of x_i^2
