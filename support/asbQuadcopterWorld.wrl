@@ -80,7 +80,7 @@ DEF OnQuadNoRotation Viewpoint {
   orientation -0.26261 -0.72827 -0.26335 1.6443
 }
 DEF LandingMarker Transform {
-  translation 56.7 0 97
+  translation 56.7 0 96
   children Shape {
     appearance Appearance {
       material Material {
