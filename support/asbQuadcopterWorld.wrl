@@ -76,15 +76,28 @@ DEF IsoNoRotation Viewpoint {
 }
 DEF OnQuadNoRotation Viewpoint {
   description "Chase - No Rotation"
-  position 52.07986 2.343061 96.49808
+  position 54.07986 2.343061 96.49808
   orientation -0.26261 -0.72827 -0.26335 1.6443
 }
-DEF LandingMarker Transform {
-  translation 56.7 0 96
+DEF LandingMarker2 Transform {
+  translation 57.3 0 93.7
   children Shape {
     appearance Appearance {
       material Material {
         diffuseColor 1 0 0
+      }
+    }
+    geometry Box {
+      size 0.1 0.01 0.1
+    }
+  }
+}
+DEF LandingMarker Transform {
+  translation 57 0 96.5
+  children Shape {
+    appearance Appearance {
+      material Material {
+        diffuseColor 0 0 1
       }
     }
     geometry Box {
